@@ -16,7 +16,7 @@ export default (state = initialState, action) => {
     console.log(state.count)
     return {
       ...state,
-      count: state.count + 1
+      count: action.payload + 1
     }
     // ++state.count
     //Why doesn't this work?
@@ -27,7 +27,7 @@ export default (state = initialState, action) => {
     console.log(state)
     return {
       ...state,
-      count: state.count - 1
+      count: action.payload - 1
     }
     // ++sta
     // --state.count

@@ -17,7 +17,7 @@ export const increment = count => {
   console.log(count)
   return {
     type: INCREMENT,
-    paylod: count
+    payload: count
   };
 };
 
