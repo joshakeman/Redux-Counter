@@ -19,6 +19,7 @@ export default (state = initialState, action) => {
       count: state.count + 1
     }
     // ++state.count
+    //Why doesn't this work?
     console.log(state.count)
     // return state;
     case DECREMENT:
