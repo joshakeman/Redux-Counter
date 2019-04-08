@@ -10,6 +10,8 @@ import counter from './reducers';
 // that is responsible for updating the store, along
 // with any initial state that we may want the store
 // to start out with (which is none in this case).
+
+//Step I, create the readux store and a reducer that is passed into it.
 const store = createStore(counter);
 
 // Here, we wrap our main React component inside of
@@ -17,6 +19,9 @@ const store = createStore(counter);
 // This is needed because the store needs to know where it
 // is passing its state to. The Provider component is also
 // where the store "lives".
+
+
+//Make the application aware of the redux store by improting a Provider component and passing your store into it as a prop
 ReactDOM.render(
   <Provider store={store}>
     <Counter />
